@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import PostsPage from "@/features/posts/components/PostPage";
 import { Suspense } from "react";
 
