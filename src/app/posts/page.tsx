@@ -1,4 +1,5 @@
-"use client";
+export const dynamic = "force-dynamic";
+("use client");
 import PostCard from "@/features/posts/components/PostCard";
 import PostSkeletonCard from "@/features/posts/components/PostSkeletonCard";
 import { fetchPostsThunk } from "@/features/posts/store/postsSlice";
