@@ -6,6 +6,7 @@ import TextButton from "@/shared/components/TextButton";
 import SearchBar from "@/shared/components/SearchBar";
 import { useAppDispatch, useAppSelector } from "@/shared/hooks/hooks";
 import { useEffect, useMemo, useState } from "react";
+import AddPostModal from "@/features/user/components/AddPostModal";
 const Home = () => {
   const dispatch = useAppDispatch();
 
@@ -39,9 +40,10 @@ const Home = () => {
           onChange={setSearch}
           placeholder="Search by name or email"
         />
-        <div className="">
+        <AddPostModal />
+        {/* <div className="">
           <TextButton title="Post" />
-        </div>
+        </div> */}
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-8">
