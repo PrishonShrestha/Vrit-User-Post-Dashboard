@@ -13,7 +13,7 @@ const PostsPage = () => {
   const searchParams = useSearchParams();
   const router = useRouter();
 
-  const userId = Number(searchParams.get("userId"));
+  const userId = Number(searchParams.get("userId")) || 0;
 
   const page = Number(searchParams.get("page") || "1");
 
