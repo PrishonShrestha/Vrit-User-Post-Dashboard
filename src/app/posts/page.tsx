@@ -55,6 +55,8 @@ const PostsPage = () => {
       <div className="flex items-center gap-3 py-4 px-2">
         <BackButton />
         <Image
+          width={11}
+          height={11}
           src={`https://i.pravatar.cc/150?u=${userId}`}
           alt="User"
           className="ml-3 h-11 w-11 rounded-full object-cover ring-2 ring-gray-100"

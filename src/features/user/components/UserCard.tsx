@@ -19,6 +19,8 @@ const UserCard = ({ user }: { user: UserType }) => {
     <div className="group relative overflow-hidden rounded-2xl border border-green-100 bg-gradient-to-br from-emerald-100 via-green-50 to-white p-6 shadow-lg transition hover:shadow-xl">
       <div className="flex items-center gap-4">
         <Image
+          height={14}
+          width={14}
           src={`https://i.pravatar.cc/150?u=${user.id}`}
           alt={user.name}
           className="h-14 w-14 rounded-full border object-cover"
